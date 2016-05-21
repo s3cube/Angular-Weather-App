@@ -1,0 +1,82 @@
+<div>
+    <div class="col-md-2"></div>
+    <div class="col-md-8 landingCenter">
+        <div class="row">
+            <h1>{{weather.name}}</h1></div>
+        <div class="row">
+
+            <!--Weather overall -->
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                <div class="row">
+
+                    <div ng-if="weather.weather[0].main=='Clear'">
+                        <i class="wi wi-day-sunny "></i>
+                    </div>
+                    <div ng-if="weather.weather[0].main=='Haze'">
+                        <i class="wi   wi-day-haze "></i>
+                    </div>
+                    <div ng-if="weather.weather[0].main=='Clouds'">
+                        <i class="wi wi-cloud "></i>
+                    </div>
+                    <div ng-if="weather.weather[0].main=='Rain'">
+                        <i class="wi wi-raindrop"></i>
+                    </div>
+                    <div ng-if="weather.weather[0].main=='Snow'">
+                        <i class="wi wi-snowflake-cold"></i>
+                    </div>
+                    <div ng-if="weather.weather[0].main=='Smoke'">
+                        <i class="wi wi-smog"></i>
+                    </div>
+
+
+
+                </div>
+                <div class="row">
+                    <h3>{{weather.weather[0].description}}</h3></div>
+            </div>
+
+            <!--Humidity overall -->
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                <div class="row">
+
+                    <div>
+                        <i class="wi wi-humidity"></i>
+                    </div>
+                    {{weather.weather[0].humidity}}
+                </div>
+                <div class="row">
+                    <h3>{{weather.main.humidity}} %</h3></div>
+            </div>
+
+            <!--Weather overall -->
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                <div class="row">
+
+                    <div>
+                        <i class="wi wi-thermometer "></i>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <h3>{{temperature}} 'C</h3></div>
+            </div>
+
+            <!--WindSpeed overall -->
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                <div class="row">
+
+                    <div>
+                        <i class="wi wi-strong-wind"></i>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <h3>{{weather.wind.speed}} m/s</h3></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-md-2"></div>
+
+</div>

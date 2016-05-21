@@ -1,0 +1,47 @@
+#landingCityName {}
+
+.logo {
+    text-align: center;
+    padding: 20px;
+}
+
+.landingCenter {
+    margin-top: 20%;
+    text-align: center;
+}
+
+.queryBtn {
+    margin: 10px;
+}
+
+.wi {
+    font-size: 50px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.wi-humidity {
+    color: deepskyblue;
+}
+
+.wi-thermometer {
+    color: red;
+}
+
+.wi-strong-wind {
+    color: skyblue;
+}
+
+.wi-day-sunny {
+    color: darkorange;
+}
+
+.wi-day-haze {
+    color: lightgrey;
+}
+
+.wi-raindrop {
+    color: deepskyblue;
+}

@@ -1,0 +1,17 @@
+<div ng-controller="queryCtrl">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 landingCenter">
+        <div class="logo">
+            <h3>  <i class="fa fa-sun-o fa-pulse fa-2x"></i>AngularJS + Openweather API</h3>
+        </div>
+        <form ng-submit="fireQuery(cityName)">
+
+            <input ng-model="cityName" placeholder="Where are you currently?" class="form-control" id="landingCityName" />
+
+            <button value="submit" class="queryBtn btn btn-primary">Tell me the weather</button>
+        </form>
+    </div>
+
+    <div class="col-md-2"></div>
+
+</div>
